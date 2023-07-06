@@ -1,7 +1,11 @@
-package src.main.java.com.example.blogplatformapi.controller;
+package com.example.blogplatformapi.controller;
 
-import src.main.java.com.example.blogplatformapi.model.BlogPost;
-import src.main.java.com.example.blogplatformapi.service.BlogPostService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import com.example.blogplatformapi.model.BlogPost;
+import com.example.blogplatformapi.service.BlogPostService;
 
 @RestController
 @RequestMapping("/posts")
@@ -45,4 +49,3 @@ public class BlogPostController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
-

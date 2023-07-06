@@ -1,4 +1,9 @@
-package src.main.java.com.example.blogplatformapi.model;
+package com.example.blogplatformapi.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class BlogPost {
